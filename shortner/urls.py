@@ -3,5 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.homePage, name='home'),
-    path('<str:slugs>/', views.urlRedirect, name='redirect'),
+    path('new_url/<str:pk>/', views.newUrl, name='short_url'),
+    path('u/<str:slugs>/', views.urlRedirect, name='redirect'),
+    
 ]
