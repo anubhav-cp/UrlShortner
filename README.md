@@ -10,7 +10,7 @@ A simple Website for Url Shortening made with Django-Framework.
 
 1. Clone the repository
 ```
-git clone https://github.com/anubhav-cp/expense-tracker.git
+https://github.com/anubhav-cp/UrlShortner.git
 ```
 
 
