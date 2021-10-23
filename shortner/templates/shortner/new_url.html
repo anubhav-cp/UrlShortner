@@ -1,12 +1,6 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<div class="urlcard">
-<h1>Your shortened URL</h1>
-<input id="shortenurl" type="text" value="http://127.0.0.1:8000/u/{{geturl.short_url}}">
-
-<input type="button" class="copybtn" value="Copy Link">
-
-<p>Full Url: <a href='http://127.0.0.1:8000/u/{{form.full_url}}'>{{form.full_url}}</a></p>
-</div>
+<h1>url</h1>
+<p>Short Url: <a href='http://127.0.0.1:8000/u/{{geturl.short_url}}'>http://127.0.0.1:8000/u/{{geturl.short_url}}</a></p>
 {% endblock %}

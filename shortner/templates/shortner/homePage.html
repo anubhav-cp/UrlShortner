@@ -1,25 +1,15 @@
 {% extends 'main.html' %}
 
-
 {% block content %}
-
-<div class="urlcard">
-    <h1>Paste the URL to be shortened</h1>
+<h1>This is the HomePage</h1>
 
 
-    <form method="POST">
-        {% csrf_token %}
-        {{form}}
-        
-        <input class="submitbtn" type="submit" value="Submit">
-        
-    </form>
-    <p class="desc">This is a free tool to shorten a URL or reduce a link <br>
-        Use this URL Shortener to create a shortened link making it easy to remember</p>
-    <p class="credits">This tool is powered by Django <br>
-    View Reposiotry on Github: <a href="https://github.com/anubhav-cp/UrlShortner.git">UrlShortner-Repo</a></p>
-</div>
-
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    
+    <input type="submit" value="Submit">
+</form>
 
 
 {% endblock %}
