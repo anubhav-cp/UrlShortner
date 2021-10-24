@@ -2,6 +2,7 @@
 
 A simple Website for Url Shortening made with Django-Framework.
 
+![Preview](https://user-images.githubusercontent.com/48428859/138602946-7ba8f8b3-d451-47b5-814d-f2fee63f813d.png)
 
 ## 💻 Built with
 - Django
