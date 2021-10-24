@@ -19,14 +19,12 @@ def homePage(request):
             new_url = URL(full_url = url, short_url = slug)
             
             new_url.save()
-            print(new_url)
             shorty = URL.objects.get(short_url=slug)
-            print(shorty)
             return redirect(f'new_url/{shorty.id}' )
-            print(new_url)
 
     else:
         form = UrlShortner()
+
 
     data = URL.objects.all()
     context = {'form': form, 'data':data}
